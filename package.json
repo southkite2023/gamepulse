@@ -1,0 +1,14 @@
+{
+  "name": "gamepulse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test",
+    "relay": "node services/relay/main.mjs",
+    "demo": "node apps/desktop-agent/main.mjs",
+    "receive": "node apps/receiver/main.mjs"
+  },
+  "license": "MIT"
+}
