@@ -10,7 +10,8 @@
     "demo": "node apps/desktop-agent/main.mjs",
     "receive": "node apps/receiver/main.mjs",
     "wechat:test": "node --env-file=.env apps/wechat-test/main.mjs",
-    "wechat:gateway": "node --env-file=.env services/relay/wechat-main.mjs"
+    "wechat:gateway": "node --env-file=.env services/relay/wechat-main.mjs",
+    "desktop": "node --env-file=.env apps/desktop-console/main.mjs"
   },
   "license": "MIT"
 }
