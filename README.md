@@ -4,6 +4,8 @@ Open-source cross-device game matchmaking detection and notifications.
 
 游戏在电脑上匹配，人离开后由手机提醒。当前版本已搭建底层参考架构，可用模拟信号验证状态判断和事件传输；真实游戏识别与手机推送尚未实现。
 
+新增微信测试号开发适配：支持模板消息发送、临时二维码绑定和回调验证。按 [微信测试号接入](docs/wechat-setup.md) 配置后可进行真实微信联调；尚未完成实机送达验证与正式服务号接入。阶段目标见 [发布计划](docs/launch-plan.md)。
+
 ## 快速验证
 
 安装 Node.js 24+，无需安装第三方依赖：

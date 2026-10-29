@@ -8,7 +8,9 @@
     "test": "node --test",
     "relay": "node services/relay/main.mjs",
     "demo": "node apps/desktop-agent/main.mjs",
-    "receive": "node apps/receiver/main.mjs"
+    "receive": "node apps/receiver/main.mjs",
+    "wechat:test": "node --env-file=.env apps/wechat-test/main.mjs",
+    "wechat:gateway": "node --env-file=.env services/relay/wechat-main.mjs"
   },
   "license": "MIT"
 }
