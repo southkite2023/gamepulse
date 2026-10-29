@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GamePulse · 英雄联盟提醒</title><link rel="stylesheet" href="/style.css"></head>
+<body><main>
+<header><span class="brand">◉ GamePulse</span><span class="tag">英雄联盟 · 试验版</span></header>
+<h1>对局找到时，<br>微信叫你回来。</h1><p class="intro">选择客户端窗口，让 GamePulse 留意“接受”弹窗。画面仅在本机分析。</p>
+<section class="status" aria-live="polite"><span class="dot"></span><div><strong id="status">准备就绪</strong><p id="detail">先选择英雄联盟客户端窗口。</p></div><span id="score">—</span></section>
+<div class="layout"><section class="preview"><div class="section-title"><h2>客户端画面</h2><button id="reset" class="quiet">重置选区</button></div>
+<div class="canvas-wrap"><canvas id="preview" width="640" height="324" aria-label="画面预览，可拖动框选整个客户端"></canvas><p id="empty">还没有选择画面</p></div>
+<p class="hint">如画面含边框或桌面，请拖动框选整个客户端内容，保留顶部导航与右侧好友栏。</p>
+<video id="video" muted playsinline hidden></video>
+<div class="actions"><button id="capture" class="primary">1. 选择游戏窗口</button><button id="arm" disabled>2. 开始本轮监控</button><button id="stop" class="quiet" disabled>停止</button></div>
+<label class="file">用截图预演（不发送微信）<input id="file" type="file" accept="image/png,image/jpeg,image/webp"></label>
+</section><aside><h2>这一轮如何提醒</h2><ol><li>保持客户端画面可被采集</li><li>连续确认文字与接受按钮</li><li>向已绑定微信发送一次提醒</li><li>回到电脑，手动点击接受</li></ol>
+<div class="note">默认模板来自一张参考截图，尚未通过 Win11 实机验收。先在电脑旁测试识别和锁屏提醒，再离开。</div>
+<p class="hint">窗口移动、缩放、遮挡或最小化可能影响采集。停止共享或切到本页后台时会暂停监控。新一轮需重新点击开始。</p>
+</aside></div><footer>仅发送提醒元数据 · 不上传截图 · 不自动点击接受</footer>
+</main><script type="module" src="/app.mjs"></script></body></html>
